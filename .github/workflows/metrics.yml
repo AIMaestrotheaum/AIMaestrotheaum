@@ -1,0 +1,36 @@
+name: Metrics
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 */6 * * *"
+permissions:
+  contents: write
+jobs:
+  metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: assets/metrics.isocalendar.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: assets/metrics.languages.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_languages: yes
+          plugin_languages_limit: 8
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: assets/metrics.achievements.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_achievements: yes
+          plugin_achievements_threshold: C
+      - uses: EndBug/add-and-commit@v9
+        with:
+          message: "chore: update profile metrics"
+          add: "assets/metrics.*.svg"

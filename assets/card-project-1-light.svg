@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="190">
+<rect x="1" y="1" width="758" height="188" rx="14" fill="#ffffff" stroke="#d0d7de"/>
+<text x="28" y="48" fill="#24292f" font-family="Segoe UI,Arial" font-size="24" font-weight="700">Polluxa API Data Ingestion &amp; Incremental ETL Pipeline</text>
+<text x="28" y="88" fill="#57606a" font-family="Segoe UI,Arial" font-size="16">REST API ingestion, PostgreSQL UPSERTs, validation, retries, watermark-based incremental processing and 1</text>
+<text x="28" y="124" fill="#57606a" font-family="Consolas,monospace" font-size="14">[Python]  [PostgreSQL]  [ETL]</text>
+<text x="28" y="160" fill="#39d353" font-family="Consolas,monospace" font-size="13">AIMaestrotheaum · project</text>
+</svg>

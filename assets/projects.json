@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Polluxa API Data Ingestion & Incremental ETL Pipeline",
+    "description": "REST API ingestion, PostgreSQL UPSERTs, validation, retries, watermark-based incremental processing and 178 lead records.",
+    "stack": [
+      "Python",
+      "PostgreSQL",
+      "ETL"
+    ]
+  },
+  {
+    "name": "Real-Time E-Commerce Data Pipeline & Analytics Dashboard",
+    "description": "Python ETL/ELT workflow with DuckDB, SQL transformations, data-quality controls and Streamlit monitoring.",
+    "stack": [
+      "Python",
+      "DuckDB",
+      "Streamlit"
+    ]
+  },
+  {
+    "name": "E-Commerce Customer Review & Sentiment Analyzer",
+    "description": "Web scraping, EDA, NLP sentiment classification and an interactive Streamlit dashboard.",
+    "stack": [
+      "Python",
+      "NLP",
+      "Streamlit"
+    ]
+  },
+  {
+    "name": "Autonomous Prompt-to-Infrastructure Architect Engine",
+    "description": "LangChain + FastAPI engine translating natural-language prompts into compliance-mapped cloud architectures with INR cost calculations.",
+    "stack": [
+      "LangChain",
+      "FastAPI",
+      "GenAI"
+    ]
+  },
+  {
+    "name": "Compliance Analytics & Data Governance Pipeline",
+    "description": "Python ETL pipeline for data-residency auditing, compliance scoring, anomaly tracking, PostgreSQL and Streamlit.",
+    "stack": [
+      "Python",
+      "PostgreSQL",
+      "ETL"
+    ]
+  }
+]

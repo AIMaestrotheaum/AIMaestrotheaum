@@ -1,0 +1,22 @@
+name: Charts and cards
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 3 * * *"
+permissions:
+  contents: write
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - run: pip install pillow
+      - run: python scripts/radar.py --skills assets/skills.json --out assets
+      - run: python scripts/cards.py --user AIMaestrotheaum --out assets
+      - uses: EndBug/add-and-commit@v9
+        with:
+          message: "chore: update profile charts and cards"
+          add: "assets/*.svg"
